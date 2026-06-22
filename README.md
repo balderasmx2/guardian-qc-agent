@@ -66,5 +66,31 @@ Data Sovereignty
 
 All processing runs locally on Dell GB10. No assets uploaded to any cloud. No API calls with production footage. Full NDA compliance. Works completely offline.
 
+## Roadmap — Full Feature Suite
+
+This MVP demonstrates the core Intelligence to Action loop. The full suite includes 67 features across 3 agents:
+
+**Agent 1 — QC Guardian (MVP, live)**
+- Technical QC: resolution, fps, bit depth, codec, audio, duration, file size
+- Frame analysis: black frames, freeze frames, audio clipping
+- File management: naming validation, SHA-256 hashing, JSON sidecar, PDF report
+- Provenance: C2PA-style manifest with SHA-256 per asset
+
+**Agent 2 — Production Conductor (in build)**
+- Frame.io bidirectional integration — posts QC results as comments, reads approvals
+- Airtable task management + freelancer time tracking
+- Slack task dispatch to artists
+- Topaz auto-upres watch folder — drag, scale, validate, notify
+- Smart Media Manager — MOVE instead of COPY with QC gate
+- DaVinci Resolve timeline rename + re-link
+
+**Agent 3 — Creative Orchestrator (roadmap)**
+- Script breakdown — characters, locations, VFX shots, AI gen candidates
+- AI gen prompt list per scene (Kling, Runway, Sora, LTX)
+- AI Timeline Orchestrator — shot list to XML to NLE (the gap nobody has solved)
+- AI Pull Selects — director reviews 12 clips instead of 847
+
+**Full feature map:** docs.google.com/document/d/1s7igumoDER_SReAXMjWw9c9uV5ftHR9N5tvRCmNrCnQ
+
 
 Gil Balderas —  M&E Filmmaker — shotlock.tech
